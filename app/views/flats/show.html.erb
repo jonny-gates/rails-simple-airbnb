@@ -1,0 +1,26 @@
+<div class="map"></div>
+<div class="container offset-up">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="grey-box">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="grey-box">
+        <h2>A bit more about this flat</h2>
+        <p><%= @flat.description %></p>
+      </div>
+      <div class="grey-box">
+        <h2>Details</h2>
+        <div class="d-flex">
+          <i class="fas fa-users"></i> <%= @flat.number_of_guests %> | <i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="grey-box">
+        <h2>Book this place!</h2>
+      </div>
+    </div>
+  </div>
+</div>

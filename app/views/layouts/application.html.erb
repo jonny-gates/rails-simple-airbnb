@@ -4,12 +4,30 @@
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <%= link_to "AirBnB", flats_path %>
+          <div class="div">
+            <%= form_tag("/flats", method: "get") do %>
+              <%= label_tag(:query, "Search for:") %>
+              <%= text_field_tag(:query) %>
+              <%= submit_tag("Search") %>
+            <% end %>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <%= yield %>
+
   </body>
 </html>

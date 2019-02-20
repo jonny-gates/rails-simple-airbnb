@@ -1,0 +1,23 @@
+.map {
+  height: 200px;
+  background: #000;
+}
+
+.grey-box {
+  padding: 16px;
+  background: #ebebeb;
+  margin: 8px 0px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.grey-box h1, h2 {
+  font-size: 22px;
+}
+
+.grey-box p {
+  font-size: 16px;
+}
+
+.offset-up {
+  margin-top: -40px;
+}
